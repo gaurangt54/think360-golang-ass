@@ -1,0 +1,52 @@
+{
+    "users": [
+        {
+            "account-no": 100001,
+            "holder-name": "XYZ",
+            "current-balance": 10000,
+            "pin":1234,
+            "transactions": [
+                {
+                    "id": 101,
+                    "date": "10-09-2022",
+                    "amount": 400,
+                    "type": "ATM Withdraw",
+                    "before-balance": 11000,
+                    "after-balance": 10600
+                },
+                {
+                    "id": 102,
+                    "date": "10-09-2022",
+                    "amount": 600,
+                    "type": "ATM Withdraw",
+                    "before-balance": 10600,
+                    "after-balance": 10000
+                }
+            ]
+        },
+        {
+            "account-no": 100002,
+            "holder-name": "ABC",
+            "current-balance": 6000,
+            "pin":5678,
+            "transactions": [
+                {
+                    "id": 103,
+                    "date": "10-09-2022",
+                    "amount": 400,
+                    "type": "ATM Withdraw",
+                    "before-balance": 7000,
+                    "after-balance": 6600
+                },
+                {
+                    "id": 104,
+                    "date": "10-09-2022",
+                    "amount": 600,
+                    "type": "ATM Withdraw",
+                    "before-balance": 6600,
+                    "after-balance": 6000
+                }
+            ]
+        }
+    ]
+}
