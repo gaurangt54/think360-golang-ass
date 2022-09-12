@@ -21,6 +21,10 @@ func main() {
 
 	case 3:
 
+		var keyword string
+		fmt.Printf("Enter your keyword -> ")
+		fmt.Scanln(&keyword)
+
 		c := colly.NewCollector(colly.AllowedDomains("www.amazon.in"))
 
 		c.OnRequest(func(r *colly.Request) {
@@ -42,7 +46,9 @@ func main() {
 			})
 		})
 
-		c.Visit("https://www.amazon.in/s?k=laptops")
+		var link = "https://www.amazon.in/s?k=" + keyword
+
+		c.Visit(link)
 
 	default:
 		fmt.Print("Enter Correct Option")
